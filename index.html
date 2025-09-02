@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday Kazeee 🎉</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+    body { margin: 0; font-family: 'Poppins', sans-serif; background: #fffafc; color: #333; scroll-behavior: smooth; }
+    
+    header { 
+      background: linear-gradient(135deg, #ff7eb3, #ff758c, #ffb199); 
+      text-align: center; 
+      padding: 120px 20px; 
+      color: white; 
+      position: relative; 
+      overflow: hidden; 
+    }
+    header h1 { font-size: 3.5em; margin: 0; animation: fadeInDown 1.5s ease; }
+    header p { font-size: 1.3em; margin-top: 10px; animation: fadeInUp 2s ease; }
+
+    @keyframes fadeInDown { from {opacity:0; transform:translateY(-40px);} to {opacity:1; transform:translateY(0);} }
+    @keyframes fadeInUp { from {opacity:0; transform:translateY(40px);} to {opacity:1; transform:translateY(0);} }
+
+    nav { background: #fff; position: sticky; top: 0; display: flex; justify-content: center; padding: 12px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);}
+    nav a { margin: 0 20px; text-decoration: none; color: #ff4f81; font-weight: 600; transition: color 0.3s; }
+    nav a:hover { color: #ff85a2; }
+
+    section { padding: 70px 20px; max-width: 1000px; margin: auto; }
+    h2 { text-align: center; margin-bottom: 25px; color: #ff4f81; font-size: 2em; }
+
+    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .gallery img { width: 100%; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.15); transition: transform 0.3s; }
+    .gallery img:hover { transform: scale(1.05); }
+
+    .video-container { display: flex; justify-content: center; }
+    .video-container iframe, .video-container video { width: 100%; max-width: 720px; border-radius: 20px; box-shadow: 0 6px 15px rgba(0,0,0,0.2); }
+
+    .message { font-size: 1.2em; text-align: center; line-height: 1.7; background: #fff0f5; padding: 30px; border-radius: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+
+    footer { text-align: center; padding: 20px; color: #666; font-size: 0.9em; }
+  </style>
+</head>
+<body>
+
+  <!-- Confetti Effect -->
+  <canvas id="confetti"></canvas>
+
+  <header>
+    <h1>Happy Birthday, Sis! 🎂🎉</h1>
+    <p> Agak alay sedikit gapapa karena gw udh seminggu bikin ini maklumin ya HAHAHAHA.</p>
+  </header>
+
+  <nav>
+    <a href="#gallery">Gallery</a>
+    <a href="#video">Video</a>
+    <a href="#message">Message</a>
+  </nav>
+
+  <section id="gallery">
+    <h2>Narsis Dulu Cess 📸</h2>
+    <div class="gallery">
+      <img src="ADEKEYSHA/dek key 1" alt="Photo 1">
+      <img src="ADEKEYSHA/dek key 2" alt="Photo 2">
+      <img src="ADEKEYSHA/dek key 3" alt="Photo 3">
+      <!-- Add more photos here -->
+    </div>
+  </section>
+
+  <section id="video">
+    <h2>My Birthday Wish 🎥</h2>
+     <div class="video-container">
+    <video controls>
+      <source src="ADEKEYSHA/Birthday wish mas rdet.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</section>
+
+  <section id="message">
+    <h2>A Little Note 💌</h2>
+    <p class="message">
+      Dear KZ, <br><br>
+      HALOOO Selamat ulang tahun ya dek... maaf ya gw gabisa heboh ngapa apa karena yaa keadaan di luar kamu udh tau kan gimana
+      On this special day, I just want to remind you how loved you are, not only by me but by everyone lucky enough to know you.  
+      <br><br>
+      May this year bring you more laughter, dreams fulfilled, and moments that make your heart glow.  
+      <br><br>
+      I’m so proud to be your Big Bro. Happy Birthday! ❤️
+    </p>
+  </section>
+
+  <footer>
+    Made with ❤️ just for you
+  </footer>
+
+  <!-- Confetti Script -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script>
+    const confettiCanvas = document.getElementById('confetti');
+    const myConfetti = confetti.create(confettiCanvas, { resize: true });
+    setTimeout(() => { myConfetti({ particleCount: 200, spread: 120, origin: { y: 0.6 } }); }, 800);
+  </script>
+
+</body>
+</html>
